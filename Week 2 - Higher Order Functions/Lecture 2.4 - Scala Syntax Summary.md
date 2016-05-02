@@ -23,4 +23,4 @@
 
     + Parameter can be:
         * Call by value parameter like `(x: Int)`
-        * Call bt name parameter like `(y: => Double)`
+        * Call by name parameter like `(y: => Double)`
