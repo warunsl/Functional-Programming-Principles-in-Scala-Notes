@@ -26,6 +26,22 @@
 
         * Function application associates left to right `sum(cube)(1, 10) === (sum(cube))(1, 10)`
 
+    + Functions that return other functions are used frequently in Scala and Scala provides a easier syntax to achieve that.
+
+            def outer-func(outer-func-params): <signature-of-returned-func> = {
+              def inner-func(inner-func-params): <inner-func-return-type> = {
+                <inner-func-body>
+              }
+              inner-func
+            }
+
+      can be replaced by `def outer-func(outer-func-params)(inner-func-params): <outer-func-return-type> = {}`
+
+            def sum(f: Int => Int)(a: Int, b: Int): Int = {
+              if (a > b) 0
+              else f(a) + sum(f)(a + 1, b)
+            }
+
     + Exercise
         * Write a product function that calculates the product of the values of a function for points on a given interval
 
