@@ -29,4 +29,20 @@ Instructor: Martin Odersky
 - Parameter can be:
     * Call by value parameter like `(x: Int)`
     * Call by name parameter like `(y: => Double)`
+- Operators can be used as identifiers. An identifier can be:
+    * Alphanumeric - Starting with a letter, followed by a sequence of letters and numbers.
+    * Symbolic - Starting with an operator symbol, followed by other operator symbols.
+    * Alphanumeric identifiers can also end in an underscore (which counts as a letter) followed by some operator symbol.
+    * Precedence of an operator is determined by its first character.
+    * Operator precedence:
+        all letters (lowest)
+        `|`
+        `^`
+        `&`
+        `< >`
+        `= !`
+        `:`
+        `+ -`
+        `* / %`  
+        special characters(highest)	
 
