@@ -7,6 +7,7 @@ Instructor: Martin Odersky
 ## Index
 [Week 1: Functions & Evaluations](Week 1 - Functions & Evaluations)  
 [Week 2: Higher Order Functions](Week 2 - Higher Order Functions)
+[Week 3: Data and Abstraction](Week 3 - Data and Abstraction)
 
 ## Scala Syntax Summary
 - Types can be:
@@ -35,14 +36,14 @@ Instructor: Martin Odersky
     * Alphanumeric identifiers can also end in an underscore (which counts as a letter) followed by some operator symbol.
     * Precedence of an operator is determined by its first character.
     * Operator precedence:
-        all letters (lowest)
-        `|`
-        `^`
-        `&`
-        `< >`
-        `= !`
-        `:`
-        `+ -`
-        `* / %`  
-        special characters(highest)	
+        all letters (lowest)    
+        `|`    
+        `^`    
+        `&`    
+        `< >`    
+        `= !`    
+        `:`    
+        `+ -`    
+        `* / %`      
+        special characters(highest)	    
 
