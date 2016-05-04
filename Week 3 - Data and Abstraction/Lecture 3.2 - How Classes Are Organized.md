@@ -28,6 +28,7 @@
     + traits cannot have `val` parameters. But unlike interfaces in Java it can contain concrete methods and fields.
 
 - Scala class hierarchy
+	+ [Class hierarchy](http://www.scala-lang.org/old/sites/default/files/images/classhierarchy.png)
     + `Scala.Any` is at the top of scala class hierarchy and is the base type of all scala types. It is also the base type that defines universal methods like `toString`, `equals`, `hashCode`, `==`, `!=`, etc
     + `Scala.AnyVal` is a subclass of `Scala.Any` and is the base class of all primitive types like `Byte`, `Int`, `Double`, etc
     + `Scala.AnyRef` is a base type of all reference types. Alias of `java.lang.Object`
