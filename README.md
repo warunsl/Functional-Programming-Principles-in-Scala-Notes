@@ -35,8 +35,8 @@ Instructor: Martin Odersky
     * Symbolic - Starting with an operator symbol, followed by other operator symbols.
     * Alphanumeric identifiers can also end in an underscore (which counts as a letter) followed by some operator symbol.
     * Precedence of an operator is determined by its first character.
-    * Operator precedence:
-        all letters (lowest)    
+    * Operator precedence:    
+        all letters (lowest)        
         `|`    
         `^`    
         `&`    
