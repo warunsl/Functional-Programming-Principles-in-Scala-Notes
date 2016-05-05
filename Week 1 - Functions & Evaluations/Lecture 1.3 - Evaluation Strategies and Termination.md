@@ -12,9 +12,11 @@
     * Both evaluations terminate.
     * If CBV of an expression evaluation terminates, its CBN evaluation terminates too. Other direction is not true.
         Example:
-            def loop: Int = loop
-            def first(x: Int, y: Int) = x
-            first(1, loop)
+
+          def loop: Int = loop
+          def first(x: Int, y: Int) = x
+          first(1, loop)
+
         - Under Call by value, it tries to reduce the second parameter `loop` and gets into an infinite loop.
         - Under Call by name, the second parameter is not reduced at all since it is not used in the function definition.
 + Scala uses CBV. CBV does not involve repeated computation of the function arguments.
