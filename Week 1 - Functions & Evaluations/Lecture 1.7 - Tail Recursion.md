@@ -2,9 +2,10 @@
 
 ### Tail Recursion
 + Example
+
         def gcd(a: Int, b: Int): Int =
           if (b == 0) a else gcd(b, a % b)
-
+        
         def factorial(n: Int): Int =
           if (n == 0) 1 else n * factorial(n - 1)
 
@@ -13,6 +14,7 @@
 + The `gcd` function above is tail recursive because the last task of the function is to call itself.
 + The `factorial` function is not tail recursive since the last action of the function is to multiply `n` with the result of the function call.
 + It can be converted to a tail recursive function as follows
+
         def factorial(n: Int): Int = {
           def factorialTailRec(n: Int, productSoFar: Int): Int = {
             if (n == 1) productSoFar
