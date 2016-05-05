@@ -27,7 +27,7 @@
         }
         sqrtIter(1.0)
         }
-       sqrt(2)
+        sqrt(2)
 + Notes:
     * Recursive functions in Scala must have a return type.
     * Functions that are necessary for another function can be nested within the main function to avoid namespace pollution.
