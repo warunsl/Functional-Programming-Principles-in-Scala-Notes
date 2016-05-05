@@ -6,7 +6,7 @@ Instructor: Martin Odersky
 
 ## Index
 [Week 1: Functions & Evaluations](Week 1 - Functions & Evaluations)  
-[Week 2: Higher Order Functions](Week 2 - Higher Order Functions)
+[Week 2: Higher Order Functions](Week 2 - Higher Order Functions)  
 [Week 3: Data and Abstraction](Week 3 - Data and Abstraction)
 
 ## Scala Syntax Summary
@@ -46,4 +46,3 @@ Instructor: Martin Odersky
         `+ -`    
         `* / %`      
         special characters(highest)	    
-
