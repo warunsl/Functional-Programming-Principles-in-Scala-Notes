@@ -13,33 +13,30 @@
 
 + Example
 
-       abstract class IntSet {
-         def incl(x: Int): IntSet
-         def contains(x: Int): Boolean
-       }
-
-       class EmptyIntSet extends IntSet {
-         def incl(elem: Int): IntSet = new NonEmptyIntSet(elem, new EmptyIntSet, new EmptyIntSet)
-         def contains(elem: Int): Boolean = false
-         override def toString() = "."
-       }
-
-       class NonEmptyIntSet(root: Int, leftSubtree: IntSet, rightSubtree: IntSet) extends IntSet {
-         def incl(elem: Int): IntSet = {
-           if (elem < root) new NonEmptyIntSet(root, leftSubtree incl elem, rightSubtree)
-           else if (elem > root) new NonEmptyIntSet(root, leftSubtree, rightSubtree incl elem)
-           else this
-         }
-         def contains(elem: Int): Boolean = {
-           if (elem < root) leftSubtree contains elem
-           else if (elem > root) rightSubtree contains elem
-           else true
-         }
-         override def toString() = "{" + leftSubtree + root + rightSubtree + "}"
-       }
-
-       val t1 = new NonEmptyIntSet(7, new EmptyIntSet, new EmptyIntSet)
-       val t2 = t1 incl 5 incl 9 incl 3 incl 2 incl 1 incl 8 incl 10
+        abstract class IntSet {
+          def incl(x: Int): IntSet
+          def contains(x: Int): Boolean
+        }
+        class EmptyIntSet extends IntSet {
+          def incl(elem: Int): IntSet = new NonEmptyIntSet(elem, new EmptyIntSet, new EmptyIntSet)
+          def contains(elem: Int): Boolean = false
+          override def toString() = "."
+        }
+        class NonEmptyIntSet(root: Int, leftSubtree: IntSet, rightSubtree: IntSet) extends IntSet {
+          def incl(elem: Int): IntSet = {
+            if (elem < root) new NonEmptyIntSet(root, leftSubtree incl elem, rightSubtree)
+            else if (elem > root) new NonEmptyIntSet(root, leftSubtree, rightSubtree incl elem)
+            else this
+          }
+          def contains(elem: Int): Boolean = {
+            if (elem < root) leftSubtree contains elem
+            else if (elem > root) rightSubtree contains elem
+            else true
+          }
+          override def toString() = "{" + leftSubtree + root + rightSubtree + "}"
+        }
+        val t1 = new NonEmptyIntSet(7, new EmptyIntSet, new EmptyIntSet)
+        val t2 = t1 incl 5 incl 9 incl 3 incl 2 incl 1 incl 8 incl 10
 
   gives
 

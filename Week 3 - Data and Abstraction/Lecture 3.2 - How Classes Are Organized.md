@@ -17,7 +17,7 @@
 + All members of the packages `scala`, `java.lang` and the singleton object `scala.Predef` are auto imported.
 
 ### Traits
-+ In Scala, a class can have only one superclass.
++ In Scala, a class can have only one superclass. It's a single inheritance language.
 + If a class wants to inherit code from more than one supertype we use `traits`.
 + `traits` are declared like an `abstract class` with the keyword  `trait` instead of `abstract class`
 + Classes, objects and traits can inherit from at most one class but from many traits.

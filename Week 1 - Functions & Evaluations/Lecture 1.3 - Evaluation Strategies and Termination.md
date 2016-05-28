@@ -1,4 +1,4 @@
-\# Lecture 1.3 - Evaluation Strategies and Termination
+# Lecture 1.3 - Evaluation Strategies and Termination
 
 ### Evaluation strategies
 + Call by value
