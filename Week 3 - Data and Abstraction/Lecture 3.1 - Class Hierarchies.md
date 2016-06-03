@@ -60,6 +60,10 @@
         }
 
 + The above snippet defines a singleton object.
+   * When a singleton object shares the same name as the class, it is called the class' companion object.
+   * The class is called the companion class of the singleton object.
+   * A class and it's companion object should be defined in the same source file.
+   * A class and it's companion object can access each others' private members.
 + They are `val`s so `EmptyIntSet` evaluates to itself.
 
 ### Programs
