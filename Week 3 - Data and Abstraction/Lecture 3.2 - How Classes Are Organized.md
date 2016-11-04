@@ -31,7 +31,7 @@
 + [Class hierarchy](http://www.scala-lang.org/old/sites/default/files/images/classhierarchy.png)
 + `Scala.Any` is at the top of scala class hierarchy and is the base type of all scala types. It is also the base type that defines universal methods like `toString`, `equals`, `hashCode`, `==`, `!=`, etc
 + `Scala.AnyVal` is a subclass of `Scala.Any` and is the base class of all primitive types like `Byte`, `Int`, `Double`, etc
-+ `Scala.AnyRef` is a base type of all reference types. Alias of `java.lang.Object`
++ `Scala.AnyRef` is a base type of all reference types. Alias of `java.lang.Object`. `scala.Iterable`, `scala.Seq`, `scala.List` are base classes of `scala.AnyRef` but they also implement the trait `Scala.ScalaObject`
 
 ### Nothing type
 + `Scala.Nothing` is at the bottom of Scala's type hierarchy. It is a subtype of every other type. There is no value of type `Nothing`
@@ -47,7 +47,7 @@
 + It is incompatible with subtypes of `AnyVal`
 
         val x = null
-        val y: String = null
+        val y: String = x
         val z: Int = null       // type mismatch
 
-
++ `if (true) 1 else false`. The type of this expression is `AnyVal`. Looking at the hierarchy, the common super type of `Int` and `Boolean` is `AnyVal`.

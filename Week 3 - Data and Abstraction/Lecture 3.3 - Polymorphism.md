@@ -28,6 +28,10 @@
         class Nil[T] extends List[T]
 
 + Type parameters can also be applied to functions.
+  Example: Consider a function that creates a single element `List`. It can be defined as:
+      def singleton[T](elem: T) = new Cons[T](elem, new Nil[T])
+  This function can be invoked for `Int`a as `singleton[Int](1)` or simply as `singleton(1)` and the compiler will deduce the type automatically.
+  
 + Type parameters do not affect evaluation in Scala. All type parameters and type arguments are removed before evaluating a program. This is called **type erasure**.
 
 ### Polymorphism
