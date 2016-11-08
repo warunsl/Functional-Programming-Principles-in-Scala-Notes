@@ -46,4 +46,6 @@
         class Sum(e1: Expr, e2: Expr) extends Expr {
             override def eval: Int = e1.eval + e2.eval
         }
+    The short coming with this method is we need to touch all classes (possibly across multiple source files) to add a new method to the trait.
 
+- Another solution involves Scala's Pattern Matching.
