@@ -10,6 +10,7 @@ Instructor: Martin Odersky
 [Week 3: Data and Abstraction](Week 3 - Data and Abstraction)  
 [Week 4: Types and Pattern Matching](Week 4 - Types and Pattern Matching)  
 [Week 5: Lists](Week 5 - Lists)  
+[Week 6: Collections](Week 6 - Collections)  
 
 ## Scala Syntax Summary
 - Types can be:
