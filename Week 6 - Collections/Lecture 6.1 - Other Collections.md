@@ -36,8 +36,15 @@
                     Iterator
                     /   |   \
                  Seq   Set  Map
-               /  |  \
-          List  Vector Range  
+               /  |  \\
+              /   |   \ IndexedSeq
+             /    |   /\  |
+          List  Vector  Range  
+          
+    * `Seq`, `Set` and `Map` are sub-classes of `Iterator`.
+    * `List`, `Vector`, `Range` and `IndexedSeq` are sub-classes of `Seq`
+    * `Vector` and `Range` are sub-classes of `IndexedSeq`
+
 - `Array`s and `String`s support the same operations as `Seq` and can be converted to sequences when needed.
 - Another `Seq` is `Range`. Three operators are defined on `Range`:
     * `to`: `1 to 5` would give `scala.collection.immutable.Range.Inclusive = Range(1, 2, 3, 4, 5)`
